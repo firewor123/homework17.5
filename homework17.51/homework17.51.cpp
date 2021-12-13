@@ -55,7 +55,7 @@ int main()
 	massive.GetX();
 	massive.GetY();
 	massive.GetZ();
-	massive.SetX(6);
+	massive.SetX(2);
 	massive.SetY(12);
 	massive.SetZ(3);
 	std::cout << abs(sqrt(pow(massive.GetX(), 2) + pow(massive.GetY(), 2) + pow(massive.GetZ(), 2))) << "\n";
