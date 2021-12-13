@@ -32,11 +32,6 @@ public:
 	{
 		z = newZ;
 	}
-	double GetScale()
-	{
-		double Scale = x + y + z;
-		return Scale;
-	}
 };
 
 class example
@@ -60,12 +55,8 @@ int main()
 	massive.GetX();
 	massive.GetY();
 	massive.GetZ();
-	massive.SetX(-15);
-	massive.SetY(-12);
-	massive.SetZ(-21);
-	massive.GetScale();
-	std::cout << abs(massive.GetScale()) << "\n";
-	std::vector<double>array{ massive.GetX(), massive.GetY(), massive.GetZ() };
-	std::cout << array.size();
-
+	massive.SetX(6);
+	massive.SetY(12);
+	massive.SetZ(3);
+	std::cout << abs(sqrt(pow(massive.GetX(), 2) + pow(massive.GetY(), 2) + pow(massive.GetZ(), 2))) << "\n";
 }
